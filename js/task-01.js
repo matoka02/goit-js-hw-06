@@ -14,6 +14,7 @@
 // const list = document.querySelectorAll('.item');
 // console.log(`Number of categories: ${list.length}`);
 
+// поиск li в ul с id
 // const subList = document.querySelectorAll('#categories>li');
 // subList.forEach(element => {
 //     const nameSubList = element.firstElementChild.textContent;
@@ -21,9 +22,10 @@
 //     console.log(`Category: ${nameSubList} \n Elements: ${numberSubList}`);
 // });
 
+// 1. поиск по классу
 const list = document.querySelectorAll('.item');
 console.log(`Number of categories: ${list.length}`);
-
+// 2. перебор массива
 list.forEach(element => {
     const nameSubList = element.firstElementChild.textContent;
     const numberSubList = element.lastElementChild.children.length;
