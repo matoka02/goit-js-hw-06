@@ -11,14 +11,24 @@
 //     console.log(`Категория: ${title} / Количество элементов: ${itemsLength}`);
 // });
 
-const generalList = document.querySelectorAll('.item');
-console.log(`Number of categories: ${generalList.length}`);
-// console.log(generalList);
+// const list = document.querySelectorAll('.item');
+// console.log(`Number of categories: ${list.length}`);
 
-const partsOfList = document.querySelectorAll('#categories>li');
-partsOfList.forEach(element => {
-    const nameList = element.firstElementChild.textContent;
-    const numberList = element.lastElementChild.children.length;
-    console.log(`Category: ${nameList} \n Elements: ${numberList}`);
+// const subList = document.querySelectorAll('#categories>li');
+// subList.forEach(element => {
+//     const nameSubList = element.firstElementChild.textContent;
+//     const numberSubList = element.lastElementChild.children.length;
+//     console.log(`Category: ${nameSubList} \n Elements: ${numberSubList}`);
+// });
+
+const list = document.querySelectorAll('.item');
+console.log(`Number of categories: ${list.length}`);
+
+list.forEach(element => {
+    const nameSubList = element.firstElementChild.textContent;
+    const numberSubList = element.lastElementChild.children.length;
+    console.log(`Category: ${nameSubList}`);
+    console.log(`Elements: ${numberSubList}`);
 });
+
 
