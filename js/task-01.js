@@ -31,4 +31,3 @@ list.forEach(element => {
     console.log(`Elements: ${numberSubList}`);
 });
 
-
