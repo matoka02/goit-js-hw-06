@@ -1,6 +1,7 @@
 "use strict";
 
-let valueEl = Number(document.querySelector('#value').textContent);
+// let valueEl = Number(document.querySelector('#value').textContent);
+let valueEl = 0;
 
 let counterValue = document.querySelector('#value');
 console.log(counterValue.textContent);
