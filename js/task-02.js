@@ -9,6 +9,7 @@ const ingredients = [
   'Condiments',
 ];
 
+// // отклонено
 // const listRef = document.querySelector('#ingredients');
 
 // const arr = [];
@@ -20,12 +21,28 @@ const ingredients = [
 // }
 // listRef.append(...arr);
 
-const listRef = document.querySelector('#ingredients');
+// // отклонено
+// const listRef = document.querySelector('#ingredients');
 
-const markup = ingredients.map((el) =>
-`<li class="item">
-${el}
-</li>`).join('');
-// console.log(markup);
+// const markup = ingredients.map((el) =>
+// `<li class="item">
+// ${el}
+// </li>`).join('');
+// // console.log(markup);
 
-listRef.insertAdjacentHTML('beforeend', markup);
+// listRef.insertAdjacentHTML('beforeend', markup);
+
+const list = document.querySelector('#ingredients');
+
+const li = [];
+
+ingredients.map(ingredient => {
+	const item = document.createElement('li');
+	item.className = 'item';
+	item.textContent = ingredient;
+	li.push(item);
+})
+
+console.log(li);
+
+list.append(...li);
